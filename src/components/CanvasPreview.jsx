@@ -50,6 +50,7 @@ export default function CanvasPreview({
 
         if (el.type === "image") {
           const img = new Image();
+          img.crossOrigin = "anonymous";
           img.src = `https://canvasbackend-1.onrender.com/${el.imageUrl}`;
 
           await new Promise((resolve) => {
