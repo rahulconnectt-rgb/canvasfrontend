@@ -52,7 +52,7 @@ export default function CanvasPreview({
           const img = new Image();
           img.crossOrigin = "anonymous";
           img.src = `https://canvasbackend-1.onrender.com/${el.imageUrl}`;
-
+          console.log(img.src)
           await new Promise((resolve) => {
             img.onload = () => {
               ctx.drawImage(img, el.x, el.y, el.width, el.height);
