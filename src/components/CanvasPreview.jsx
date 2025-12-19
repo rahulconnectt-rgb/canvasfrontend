@@ -50,7 +50,7 @@ export default function CanvasPreview({
 
         if (el.type === "image") {
           const img = new Image();
-          img.src = `http://localhost:5000/${el.imageUrl}`;
+          img.src = `https://canvasbackend-1.onrender.com/${el.imageUrl}`;
 
           await new Promise((resolve) => {
             img.onload = () => {
